@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Tavola | Restorant</title>
+  <meta name="description" content="La Tavola - ushqim i freskët dhe i gatuar me dashuri në një atmosferë të ngrohtë.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#home" class="logo">La Tavola</a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="#home" data-i18n="nav_home">Home</a></li>
+        <li><a href="#menu" data-i18n="nav_menu">Menu</a></li>
+        <li><a href="#about" data-i18n="nav_about">About Us</a></li>
+        <li><a href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+        <li><a href="#hours" data-i18n="nav_hours">Hours</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        <li class="lang-switch">
+          <button type="button" data-lang="sq">SQ</button>
+          <span>|</span>
+          <button type="button" data-lang="en">EN</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="eyebrow" data-i18n="hero_eyebrow">Fresh &bull; Handmade &bull; Local</p>
+      <h1 data-i18n="hero_title">Good food, made with love</h1>
+      <p class="hero-text" data-i18n="hero_text">Welcome to La Tavola. Come hungry, leave happy.</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn" data-i18n="hero_btn_menu">View Menu</a>
+        <a href="#contact" class="btn btn-outline" data-i18n="hero_btn_book">Book a Table</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="menu_title">Our Menu</h2>
+      <p class="section-sub" data-i18n="menu_sub">Everything is prepared fresh every day.</p>
+
+      <div class="menu-tabs">
+        <button class="tab active" data-target="starters" data-i18n="tab_starters">Starters</button>
+        <button class="tab" data-target="mains" data-i18n="tab_mains">Mains</button>
+        <button class="tab" data-target="desserts" data-i18n="tab_desserts">Desserts</button>
+        <button class="tab" data-target="drinks" data-i18n="tab_drinks">Drinks</button>
+      </div>
+
+      <div class="menu-category active" id="starters">
+        <div class="category-banner banner-starters" role="img" data-i18n-aria="tab_starters" aria-label="Starters"></div>
+        <div class="menu-item"><div class="item-head"><h3 data-i18n="s1_name">Bruschetta</h3><span class="price">$6.50</span></div><p data-i18n="s1_desc">Toasted bread, ripe tomatoes, basil, garlic and olive oil.</p></div>
+        <div class="menu-item"><div class="item-head"><h3 data-i18n="s2_name">Caprese Salad</h3><span class="price">$8.00</span></div><p data-i18n="s2_desc">Fresh mozzarella, tomato, basil and balsamic glaze.</p></div>
+        <div class="menu-item"><div class="item-head"><h3 data-i18n="s3_name">Soup of the Day</h3><span class="price">$5.50</span></div><p data-i18n="s3_desc">Ask your waiter about today's homemade soup.</p></div>
+        <div class="menu-item"><div class="item-head"><h3 data-i18n="s4_name">Garlic Bread</h3><span class="price">$4.50</span></div><p data-i18n="s4_desc">Oven-baked with garlic butter and parsley.</p></div>
+      </div>
+
+      <div class="menu-category" id="mains">
+        <div class="category-banner banner-mains" role="img" data-i18n-aria="tab_mains" aria-label="Mains"></div>
+        <div class="menu-item"><div class="item-head"><h3 data-i18n="m1_name">Margherita Pizza</h3><span class="price">$11.00</span></div><p data-i18n="m1_desc">Tomato sauce, mozzarella, fresh basil, wood-fired.</p></div>
+        <div class="menu-item"><div class="item-head"><h3 data-i18n="m2_name">Spaghetti Carbonara</h3><span class="price">$13.50</span></div><p data-i18n="m2_desc">Creamy egg sauce, crispy pancetta and parmesan.</p></div>
+        <div class="menu-item"><div class="item-head"><h3 data-i18n="m3_name">Grilled Chicken</h3><span class="price">$14.00</span></div><p data-i18n="m3_desc">Served with roasted vegetables and herb potatoes.</p></div>
+        <div class="menu-item"><div class="item-head"><h3 data-i18n="m4_name">Mushroom Risotto</h3><span class="price">$12.50</span></div><p data-i18n="m4_desc">Creamy arborio rice with wild mushrooms. <em>(Vegetarian)</em></p></div>
+        <div class="menu-item"><div class="item-head"><h3 data-i18n="m5_name">Grilled Salmon</h3><span class="price">$17.00</span></div><p data-i18n="m5_desc">Lemon butter sauce with seasonal greens.</p></div>
+      </div>
+
+      <div class="menu-category" id="desserts">
+        <div class="category-banner banner-desserts" role="img" data-i18n-aria="tab_desserts" aria-label="Desserts"></div>
+        <div class="menu-item"><div class="item-head"><h3 data-i18n="d1_name">Tiramisu</h3><span class="price">$6.00</span></div><p data-i18n="d1_desc">Classic coffee-soaked layers with mascarpone cream.</p></div>
+        <div class="menu-item"><div class="item-head"><h3 data-i18n="d2_name">Panna Cotta</h3><span class="price">$5.50</span></div><p data-i18n="d2_desc">Vanilla cream with berry sauce.</p></div>
+        <div class="menu-item"><div class="item-head"><h3 data-i18n="d3_name">Chocolate Lava Cake</h3><span class="price">$7.00</span></div><p data-i18n="d3_desc">Warm center, served with vanilla ice cream.</p></div>
+      </div>
+
+      <div class="menu-category" id="drinks">
+        <div class="category-banner banner-drinks" role="img" data-i18n-aria="tab_drinks" aria-label="Drinks"></div>
+        <div class="menu-item"><div class="item-head"><h3 data-i18n="k1_name">Espresso</h3><span class="price">$2.50</span></div><p data-i18n="k1_desc">Rich and strong.</p></div>
+        <div class="menu-item"><div class="item-head"><h3 data-i18n="k2_name">Fresh Lemonade</h3><span class="price">$3.50</span></div><p data-i18n="k2_desc">Squeezed daily, lightly sweetened.</p></div>
+        <div class="menu-item"><div class="item-head"><h3 data-i18n="k3_name">House Wine (glass)</h3><span class="price">$6.00</span></div><p data-i18n="k3_desc">Red or white, ask for today's selection.</p></div>
+        <div class="menu-item"><div class="item-head"><h3 data-i18n="k4_name">Sparkling Water</h3><span class="price">$2.00</span></div><p data-i18n="k4_desc">Chilled, with lemon.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section section-alt">
+    <div class="container about-grid">
+      <div class="about-image" role="img" data-i18n-aria="about_img" aria-label="Our restaurant"></div>
+      <div class="about-text">
+        <h2 class="section-title left" data-i18n="about_title">About Us</h2>
+        <p data-i18n="about_p1">La Tavola started with a simple idea: serve honest food that tastes like home. Our recipes are passed down through generations, and we cook with fresh, local ingredients every single day.</p>
+        <p data-i18n="about_p2">Whether you are joining us for a quick lunch, a family dinner, or a special celebration, our team will make you feel like part of the family.</p>
+        <ul class="highlights">
+          <li><strong>10+</strong><span data-i18n="about_h1">Years of experience</span></li>
+          <li><strong>100%</strong><span data-i18n="about_h2">Fresh ingredients</span></li>
+          <li><strong>5000+</strong><span data-i18n="about_h3">Happy guests</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="gallery_title">Gallery</h2>
+      <p class="section-sub" data-i18n="gallery_sub">A taste of what's waiting for you.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item g1" role="img" data-photo="1" aria-label="Gallery photo 1"></div>
+        <div class="gallery-item g2" role="img" data-photo="2" aria-label="Gallery photo 2"></div>
+        <div class="gallery-item g3" role="img" data-photo="3" aria-label="Gallery photo 3"></div>
+        <div class="gallery-item g4" role="img" data-photo="4" aria-label="Gallery photo 4"></div>
+        <div class="gallery-item g5" role="img" data-photo="5" aria-label="Gallery photo 5"></div>
+        <div class="gallery-item g6" role="img" data-photo="6" aria-label="Gallery photo 6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOURS -->
+  <section id="hours" class="section section-alt">
+    <div class="container narrow">
+      <h2 class="section-title" data-i18n="hours_title">Opening Hours</h2>
+      <table class="hours-table">
+        <tr><td data-i18n="hours_1">Monday - Thursday</td><td>11:00 - 22:00</td></tr>
+        <tr><td data-i18n="hours_2">Friday - Saturday</td><td>11:00 - 23:30</td></tr>
+        <tr><td data-i18n="hours_3">Sunday</td><td>12:00 - 21:00</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="contact_title">Contact Us</h2>
+      <p class="section-sub" data-i18n="contact_sub">Questions or want to reserve a table? Get in touch.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3 data-i18n="contact_find">Find us</h3>
+          <p><strong data-i18n="contact_address">Address:</strong><br><span data-i18n="contact_address_val">123 Main Street, Your City</span></p>
+          <p><strong data-i18n="contact_phone">Phone:</strong><br><a href="tel:+000000000">+000 000 000</a></p>
+          <p><strong>Email:</strong><br><a href="mailto:info@latavola.com">info@latavola.com</a></p>
+          <p class="socials">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">TikTok</a>
+          </p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <label for="name" data-i18n="form_name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="date" data-i18n="form_date">Preferred date (optional)</label>
+          <input type="date" id="date" name="date">
+
+          <label for="message" data-i18n="form_message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn" data-i18n="form_send">Send Message</button>
+          <p class="form-note" id="formNote" data-i18n="form_thanks" hidden>Thank you! We will get back to you soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> La Tavola. <span data-i18n="footer_rights">All rights reserved.</span></p>
+  </footer>
+
+  <script>
+    // ---------- Translations ----------
+    // The HTML above is the English source text. Albanian (shqip) lives here.
+    const SQ = {
+      page_title: "La Tavola | Restorant",
+      nav_home: "Kryefaqja", nav_menu: "Menuja", nav_about: "Rreth Nesh",
+      nav_gallery: "Galeria", nav_hours: "Orari", nav_contact: "Kontakti",
+
+      hero_eyebrow: "Të freskëta &bull; Të bëra në shtëpi &bull; Vendore",
+      hero_title: "Ushqim i mirë, i gatuar me dashuri",
+      hero_text: "Mirë se vini te La Tavola. Ejani të uritur, largohuni të kënaqur.",
+      hero_btn_menu: "Shiko Menunë",
+      hero_btn_book: "Rezervo një Tavolinë",
+
+      menu_title: "Menuja Jonë",
+      menu_sub: "Gjithçka përgatitet e freskët çdo ditë.",
+      tab_starters: "Për Fillim", tab_mains: "Pjatat Kryesore",
+      tab_desserts: "Ëmbëlsirat", tab_drinks: "Pijet",
+
+      s1_name: "Bruschetta", s1_desc: "Bukë e thekur, domate të pjekura, borzilok, hudhër dhe vaj ulliri.",
+      s2_name: "Sallatë Caprese", s2_desc: "Mozzarella e freskët, domate, borzilok dhe glazurë balsamike.",
+      s3_name: "Supa e Ditës", s3_desc: "Pyesni kamerierin për supën e shtëpisë së sotme.",
+      s4_name: "Bukë me Hudhër", s4_desc: "E pjekur në furrë me gjalpë hudhre dhe majdanoz.",
+
+      m1_name: "Pica Margherita", m1_desc: "Salcë domatesh, mozzarella, borzilok i freskët, e pjekur në furrë druri.",
+      m2_name: "Spageti Carbonara", m2_desc: "Salcë kremoze me vezë, pancetta e kërcitshme dhe parmixhano.",
+      m3_name: "Pulë në Skarë", m3_desc: "Shërbehet me perime të pjekura dhe patate me barishte.",
+      m4_name: "Rizoto me Kërpudha", m4_desc: "Oriz arborio kremoz me kërpudha të egra. <em>(Vegjetariane)</em>",
+      m5_name: "Salmon në Skarë", m5_desc: "Salcë me limon dhe gjalpë, me perime sezonale.",
+
+      d1_name: "Tiramisu", d1_desc: "Shtresa klasike të njomura në kafe me krem mascarpone.",
+      d2_name: "Panna Cotta", d2_desc: "Krem vanilje me salcë frutash të pyllit.",
+      d3_name: "Tortë me Çokollatë të Shkrirë", d3_desc: "Zemër e ngrohtë, shërbehet me akullore vanilje.",
+
+      k1_name: "Espresso", k1_desc: "E pasur dhe e fortë.",
+      k2_name: "Limonadë e Freskët", k2_desc: "Shtrydhur çdo ditë, lehtë e ëmbël.",
+      k3_name: "Verë e Shtëpisë (gotë)", k3_desc: "E kuqe ose e bardhë, pyesni për përzgjedhjen e ditës.",
+      k4_name: "Ujë me Gaz", k4_desc: "I ftohtë, me limon.",
+
+      about_img: "Restoranti ynë",
+      about_title: "Rreth Nesh",
+      about_p1: "La Tavola lindi nga një ide e thjeshtë: të shërbejmë ushqim të sinqertë që ka shije si në shtëpi. Recetat tona kalojnë brez pas brezi dhe gatuajmë çdo ditë me përbërës të freskët vendorë.",
+      about_p2: "Qoftë për një drekë të shpejtë, një darkë familjare apo një festë të veçantë, ekipi ynë do t'ju bëjë të ndiheni pjesë e familjes.",
+      about_h1: "Vite përvojë", about_h2: "Përbërës të freskët", about_h3: "Mysafirë të kënaqur",
+
+      gallery_title: "Galeria",
+      gallery_sub: "Një shije e asaj që ju pret.",
+      photo_label: "Foto e galerisë",
+
+      hours_title: "Orari i Punës",
+      hours_1: "E Hënë - E Enjte", hours_2: "E Premte - E Shtunë", hours_3: "E Diel",
+
+      contact_title: "Na Kontaktoni",
+      contact_sub: "Keni pyetje apo dëshironi të rezervoni një tavolinë? Na shkruani.",
+      contact_find: "Na gjeni",
+      contact_address: "Adresa:", contact_address_val: "Rruga Kryesore 123, Qyteti Juaj",
+      contact_phone: "Telefoni:",
+      form_name: "Emri",
+      form_date: "Data e preferuar (opsionale)",
+      form_message: "Mesazhi",
+      form_send: "Dërgo Mesazhin",
+      form_thanks: "Faleminderit! Do t'ju kthejmë përgjigje sa më shpejt.",
+
+      footer_rights: "Të gjitha të drejtat e rezervuara."
+    };
+
+    // ---------- Language switching ----------
+    const EN_PHOTO_LABEL = "Gallery photo";
+    let currentLang = 'sq'; // default language
+
+    function applyLanguage(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang;
+
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        if (el.dataset.en === undefined) el.dataset.en = el.innerHTML; // remember English original
+        el.innerHTML = lang === 'sq' && SQ[el.dataset.i18n] !== undefined ? SQ[el.dataset.i18n] : el.dataset.en;
+      });
+
+      document.querySelectorAll('[data-i18n-aria]').forEach(el => {
+        if (el.dataset.enAria === undefined) el.dataset.enAria = el.getAttribute('aria-label');
+        const key = el.dataset.i18nAria;
+        el.setAttribute('aria-label', lang === 'sq' && SQ[key] ? SQ[key] : el.dataset.enAria);
+      });
+
+      document.querySelectorAll('[data-photo]').forEach(el => {
+        const label = lang === 'sq' ? SQ.photo_label : EN_PHOTO_LABEL;
+        el.setAttribute('aria-label', label + ' ' + el.dataset.photo);
+      });
+
+      document.title = lang === 'sq' ? SQ.page_title : 'La Tavola | Restaurant';
+
+      document.querySelectorAll('.lang-switch button').forEach(b => {
+        b.classList.toggle('active', b.dataset.lang === lang);
+      });
+
+      try { localStorage.setItem('lang', lang); } catch (e) {}
+    }
+
+    document.querySelectorAll('.lang-switch button').forEach(b => {
+      b.addEventListener('click', () => applyLanguage(b.dataset.lang));
+    });
+
+    let saved = null;
+    try { saved = localStorage.getItem('lang'); } catch (e) {}
+    applyLanguage(saved === 'en' ? 'en' : 'sq');
+
+    // ---------- Mobile nav toggle ----------
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+    // ---------- Menu tabs ----------
+    const tabs = document.querySelectorAll('.tab');
+    const categories = document.querySelectorAll('.menu-category');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        categories.forEach(c => c.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.target).classList.add('active');
+      });
+    });
+
+    // ---------- Contact form (demo only - connect to a real backend or a service like Formspree) ----------
+    document.getElementById('contactForm').addEventListener('submit', e => {
+      e.preventDefault();
+      document.getElementById('formNote').hidden = false;
+      e.target.reset();
+    });
+
+    // ---------- Footer year ----------
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
