@@ -1,0 +1,164 @@
+/* ---------- Pjesa e përgjithshme ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fffaf4;
+  line-height: 1.6;
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #b4442a;
+}
+
+h3 {
+  margin: 20px 0 10px;
+}
+
+/* Çdo pjesë e faqes ka hapësirë rreth e rrotull */
+section {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Sfondi gri/bezhë për disa pjesë */
+.gri {
+  background-color: #f5ebdd;
+  max-width: 100%;
+  text-align: center;
+}
+
+/* ---------- Menuja në krye ---------- */
+header {
+  background-color: #2b2118;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: #f0a060;
+}
+
+/* ---------- Kryefaqja ---------- */
+.kreu {
+  max-width: 100%;
+  text-align: center;
+  background-color: #7a3b1f;
+  /* Foto e parë në sfond (gallery1.jpg) me një shtresë të errët sipër */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/gallery1.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 20px;
+}
+
+/* Foto te Rreth Nesh dhe te menuja */
+.rreth-foto,
+.menu-foto {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 10px auto;
+}
+
+.kreu h2 {
+  color: white;
+  font-size: 40px;
+}
+
+.kreu p {
+  margin-bottom: 20px;
+}
+
+/* ---------- Butoni ---------- */
+.buton {
+  display: inline-block;
+  background-color: #b4442a;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buton:hover {
+  background-color: #8f3320;
+}
+
+/* ---------- Menuja ---------- */
+ul {
+  list-style: none;
+}
+
+li {
+  background-color: white;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+
+/* ---------- Galeria ---------- */
+.foto-grup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.foto-grup img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ---------- Forma ---------- */
+form {
+  max-width: 400px;
+  margin: 20px auto 0;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* ---------- Fundi ---------- */
+footer {
+  background-color: #2b2118;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
