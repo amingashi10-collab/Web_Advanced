@@ -70,7 +70,7 @@ kreu {
   height: 220px;
   object-fit: cover;
   border-radius: 8px;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 
 .kreu h2 {
@@ -82,7 +82,7 @@ kreu {
   margin-bottom: 20px;
 }
 
-buton {
+.button {
   display: inline-block;
   background-color: #b4442a;
   color: white;
@@ -117,7 +117,7 @@ li {
 }
 
 .foto-grup img {
-  width: 280px;
+  width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
@@ -150,3 +150,5 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
+.
