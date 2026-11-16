@@ -62,3 +62,91 @@ kreu {
   padding: 100px 20px;
 }
 
+.rreth-foto,
+.menu-foto {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 10px auto;
+}
+
+.kreu h2 {
+  color: white;
+  font-size: 40px;
+}
+
+.kreu p {
+  margin-bottom: 20px;
+}
+
+buton {
+  display: inline-block;
+  background-color: #b4442a;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buton:hover {
+  background-color: #8f3320;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background-color: white;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+
+.foto-grup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.foto-grup img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+form {
+  max-width: 400px;
+  margin: 20px auto 0;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+footer {
+  background-color: #2b2118;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
