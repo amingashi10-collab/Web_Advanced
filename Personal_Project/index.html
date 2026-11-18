@@ -1,164 +1,249 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sq">
 <head>
+    
     <meta charset="UTF-8">
+
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
     <title>TasteUp</title>
+
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 
- <header>
+<header>
     <h1>TasteUp</h1>
-    <nav>
-      <a href="#kreu">Kryefaqja</a>
-      <a href="#menuja">Menuja</a>
-      <a href="#rreth-nesh">Rreth Nesh</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#kontakti">Kontakti</a>
-    </nav>
-  </header>
 
-  
-  <section id="kreu" class="kreu">
+    
+    <nav>
+        <a href="#kreu">Kryefaqja</a>
+        <a href="#menuja">Menuja</a>
+        <a href="#rreth-nesh">Rreth Nesh</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#kontakti">Kontakti</a>
+    </nav>
+</header>
+
+
+<section id="kreu" class="kreu">
     <h2>Zbulo Shijen, Shijo Momentin.</h2>
     <p>Mirë se vini te TasteUp. Ejani të uritur, largohuni të kënaqur.</p>
     <a href="#menuja" class="buton">Shiko Menunë</a>
-  </section>
+</section>
 
 
-  <section id="menuja">
+<section id="menuja">
     <h2>Menuja Jonë</h2>
 
+    
     <h3>Për Fillim</h3>
-    <ul>
-      <li><img class="menu-foto" src="images/gallery15.jpg" alt="Pijet"><div class="menu-item"></li>
-      <li><img class="menu-foto" src="images/gallery16.jpg" alt="Pijet"><b>Sallatë Caprese</b> - 5.00 € <br>Mozzarella, domate dhe borzilok.</li>
-      <div class="menu-item">
-        <b>Sallatë Caprese</b> - 5.00 € <br>Mozzarella, domate dhe borzilok.
-      </div>
-      <li><img class="menu-foto" src="images/gallery18.jpg" alt="Pijet"><div class="menu-item"></li>
-      <div class="menu-item">
-        <b>Supa e Ditës</b> - 3.00 € <br>Supë e shtëpisë.
-      </div>
-    </ul>
+
+    
+    <div class="menu-container">
+
+        
+        <div class="menu-card">
+            
+            <img src="images/gallery15.jpg" alt="Bruschetta">
+
+            
+            <div class="menu-info">
+                <b>Bruschetta</b>
+                <span>2.50 €</span>
+                <p>Bukë e thekur, domate të freskëta, borzilok, vaj ulliri dhe hudhër.</p>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="images/gallery16.jpg" alt="Sallatë Caprese">
+            <div class="menu-info">
+                <b>Sallatë Caprese</b>
+                <span>5.00 €</span>
+                <p>Mozzarella, domate dhe borzilok.</p>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="images/gallery18.jpg" alt="Supa e Ditës">
+            <div class="menu-info">
+                <b>Supa e Ditës</b>
+                <span>3.00 €</span>
+                <p>Supë e përgatitur në shtëpi.</p>
+            </div>
+        </div>
+
+    </div>
 
     <h3>Pjatat Kryesore</h3>
-    <ul>
-      <li><img class="menu-foto" src="images/gallery1.jpg" alt="Pjatat kryesore"></li>
-      <div class="menu-item">
-        <b>Pica Margherita</b> - 6.00 € <br>Salcë domatesh, mozzarella dhe borzilok.
-      </div>
-      <li><img class="menu-foto" src="images/gallery8.jpg" alt="Pjatat kryesore"></li>
-      <div>
-        <b>Spageti Carbonara</b> - 7.50 € <br>Salcë me vezë, pancetta dhe parmixhano.
-      </div>
-      <li><img class="manu-foto" src="images/gallery9.jpg" alt="Pjatat kryesore"></li>
-      <div>
-        <b>Pulë në Skarë</b> - 8.00 € <br>Me perime të pjekura dhe patate.
-      </div>
-      <li><img class="menu-foto" src="images/gallery10.jpg" alt="Pjatat kryesore"></li>
-      <div>
-        <b>Salmon në Skarë</b> - 10.00 € <br>Me limon dhe perime.
-      </div>
-    </ul>
+    <div class="menu-container">
+
+        <div class="menu-card">
+            <img src="images/gallery1.jpg" alt="Pica Margherita">
+            <div class="menu-info">
+                <b>Pica Margherita</b>
+                <span>6.00 €</span>
+                <p>Salcë domatesh, mozzarella dhe borzilok.</p>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="images/gallery8.jpg" alt="Spageti Carbonara">
+            <div class="menu-info">
+                <b>Spageti Carbonara</b>
+                <span>7.50 €</span>
+                <p>Salcë me vezë, pancetta dhe parmixhano.</p>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="images/gallery9.jpg" alt="Pulë në Skarë">
+            <div class="menu-info">
+                <b>Pulë në Skarë</b>
+                <span>8.00 €</span>
+                <p>Me perime të pjekura dhe patate.</p>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="images/gallery10.jpg" alt="Salmon në Skarë">
+            <div class="menu-info">
+                <b>Salmon në Skarë</b>
+                <span>10.00 €</span>
+                <p>Me limon dhe perime.</p>
+            </div>
+        </div>
+
+    </div>
 
     <h3>Ëmbëlsirat</h3>
-    <ul>
-      <li><br><img class="menu-foto" src="images/gallery11.jpg" alt="Pjatat kryesore"><b>Tiramisu</b> - 3.50 €</li>
-      <li><br>Krem vanilje me frutat e pyllit.<img class="menu-foto" src="images/gallery19.jpg" alt="Pijet"><b>Panna Cotta</b> - 3.00 € <br>Krem vanilje me frutat e pyllit.</li>
-    </ul>
+    <div class="menu-container">
 
+        <div class="menu-card">
+            <img src="images/gallery11.jpg" alt="Tiramisu">
+            <div class="menu-info">
+                <b>Tiramisu</b>
+                <span>3.50 €</span>
+                <p>Ëmbëlsirë italiane me kafe dhe mascarpone.</p>
+            </div>
+        </div>
 
+        <div class="menu-card">
+            <img src="images/gallery19.jpg" alt="Panna Cotta">
+            <div class="menu-info">
+                <b>Panna Cotta</b>
+                <span>3.00 €</span>
+                <p>Krem vanilje me frutat e pyllit.</p>
+            </div>
+        </div>
+
+    </div>
+
+    
     <h3>Pijet</h3>
-    <ul>
-      <li><img class="menu-foto" src="images/gallery13.jpg" alt="Pjatat kryesore"><b>Espresso</b> - 1.00 €</li>
-      <li><img class="menu-foto" src="images/gallery7.jpg" alt="Pijet"><b>Limonadë e Freskët</b> - 2.00 €</li>
-      <li><img class="menu-foto" src="images/gallery14.jpg" alt="Pijet"><b>Ujë me Gaz</b> - 1.00 €</li>
-    </ul>
-  </section>
+    <div class="menu-container">
 
-  
-  <section id="rreth-nesh" class="gri">
+        <div class="menu-card">
+            <img src="images/gallery13.jpg" alt="Espresso">
+            <div class="menu-info">
+                <b>Espresso</b>
+                <span>1.00 €</span>
+                <p>Kafe espresso italiane.</p>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="images/gallery7.jpg" alt="Limonadë">
+            <div class="menu-info">
+                <b>Limonadë e Freskët</b>
+                <span>2.00 €</span>
+                <p>Limonadë me limon të freskët.</p>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="images/gallery14.jpg" alt="Ujë me Gaz">
+            <div class="menu-info">
+                <b>Ujë me Gaz</b>
+                <span>1.00 €</span>
+                <p>Ujë mineral me gaz.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="rreth-nesh" class="gri">
     <h2>Rreth Nesh</h2>
+
+    
     <img class="rreth-foto" src="images/gallery2.jpg" alt="Restoranti ynë">
+
+    
     <p>TasteUp lindi nga një ide e thjeshtë: të shërbejmë ushqim të sinqertë që ka shije si në shtëpi. Gatuajmë çdo ditë me përbërës të freskët vendorë.</p>
-    <p>“Një arsye më shumë për të dalë, një shije më shumë për ta dashur!”</p>
-  </section>
 
-  <section id="galeria">
-    <h2>Galeria</h2>
-    <div class="foto-grup">
-      <img src="images/gallery1.jpg" alt="Foto 1">
-      <img src="images/gallery2.jpg" alt="Foto 2">
-      <img src="images/gallery3.jpg" alt="Foto 3">
-      <img src="images/gallery4.jpg" alt="Foto 4">
-      <img src="images/gallery5.jpg" alt="Foto 5">
-      <img src="images/gallery6.jpg" alt="Foto 6">
-    </div>
-  </section>
+    <p>Një arsye më shumë për të dalë, një shije më shumë për ta dashur!</p>
 
-  <section id="kreu" class="kreu">
-    <h2>“Plot shije, plot dashuri, gjithmonë TasteUp!”  </h2>
-    <p>Mire se vini ne TasteUp,Ejani te rritur,largohuni te kenqaur</p>
-    <a href="#menuja" class="buton">Shiko menun</a>
-  </section>
+    <p>TasteUp lindi nga një pasion i madh për ushqimin dhe dëshira për të krijuar diçka më shumë se një restorant. Gjithçka filloi me një ide të thjeshtë: të sjellim shije të veçanta, ushqim cilësor dhe momente të paharrueshme për çdo klient.</p>
 
+    <p>Me dashuri për gatimin, përkushtim ndaj cilësisë dhe dëshirën për t'i bërë njerëzit të buzëqeshin përmes ushqimit, lindi TasteUp.</p>
 
+    <p>Sot, çdo pjatë përgatitet me kujdes, çdo shije ka historinë e saj dhe çdo klient është pjesë e rrugëtimit tonë.</p>
 
-    <img class="menu-foto" src="images/gallery4.jpg" alt="Reasutranti ynë">
-    <p>TasteUp lindi nga një pasion i madh për ushqimin dhe dëshira për të krijuar diçka më shumë se një restorant. Gjithçka filloi me një ide të thjeshtë: të sjellim shije të veçanta, ushqim cilësor dhe momente të paharrueshme për çdo klient.
+    <p>TasteUp – historia jonë fillon me shije, por vazhdon me ju!</p>
 
-Me dashuri për gatimin, përkushtim ndaj cilësisë dhe dëshirën për t'i bërë njerëzit të buzëqeshin përmes ushqimit, lindi TasteUp.
-
-Sot, çdo pjatë përgatitet me kujdes, çdo shije ka historinë e saj dhe çdo klient është pjesë e rrugëtimit tonë.
-
-TasteUp – historia jonë fillon me shije, por vazhdon me ju!</p>
     <p>Qoftë për një drekë të shpejtë, një darkë familjare apo një festë, ekipi ynë do t'ju bëjë të ndiheni si në shtëpi.</p>
-  </section>
+</section>
 
-  
-  <section id="galeria">
+
+<section id="galeria">
     <h2>Galeria</h2>
-    <div class="foto-grup">
-      <img src="images/gallery1.jpg" alt="Foto 1">
-      <img src="images/gallery2.jpg" alt="Foto 2">
-      <img src="images/gallery3.jpg" alt="Foto 3">
-      <img src="images/gallery4.jpg" alt="Foto 4">
-      <img src="images/gallery5.jpg" alt="Foto 5">
-      <img src="images/gallery6.jpg" alt="Foto 6">
-    </div>
-  </section>
 
-  <section id="kontakti" class="gri">
+    
+    <div class="foto-grup">
+        <img src="images/gallery1.jpg" alt="Foto 1">
+        <img src="images/gallery2.jpg" alt="Foto 2">
+        <img src="images/gallery3.jpg" alt="Foto 3">
+        <img src="images/gallery4.jpg" alt="Foto 4">
+        <img src="images/gallery5.jpg" alt="Foto 5">
+        <img src="images/gallery6.jpg" alt="Foto 6">
+    </div>
+</section>
+
+
+<section id="kontakti" class="gri">
     <h2>Na Kontaktoni</h2>
+
     <p><b>Adresa:</b> Rruga Kryesore 123, Qyteti Juaj</p>
     <p><b>Email:</b> amingashi10@gmail.com</p>
     <p><b>Orari:</b> E Hënë - E Shtunë, 11:00 - 23:00</p>
 
     
     <form action="mailto:amingashi10@gmail.com" method="post" enctype="text/plain">
-      <label>Emri</label>
-      <input type="text" name="emri" required>
 
-      <label>Mesazhi</label>
-      <textarea name="mesazhi" rows="4" required></textarea>
+        
+        <label>Emri</label>
+        <input type="text" name="emri" required>
 
-      <button type="submit" class="buton">Dërgo Mesazhin</button>
+        
+        <label>Mesazhi</label>
+        <textarea name="mesazhi" rows="4" required></textarea>
+
+        
+        <button type="submit" class="buton">Dërgo Mesazhin</button>
     </form>
-  </section>
+</section>
 
-  <footer>
+
+<footer>
     <p>&copy; 2026 TasteUp. Të gjitha të drejtat e rezervuara.</p>
-  </footer>
+</footer>
 
-
-
-
-  </section>
-
-  
-    
 </body>
 </html>
